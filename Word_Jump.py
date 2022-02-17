@@ -67,13 +67,10 @@ while True:
     background = pygame.transform.scale(background, (WIDTH, HEIGHT))
     character = pygame.image.load('steve.png')
     character = pygame.transform.scale(character, (50,120))
-    wood = pygame.image.load('wood-.png')
-    wood = pygame.transform.scale(wood, (90,50))
-
     gameDisplay.blit(background, (0,0))
 
     y_cor += word_speed
-    gameDisplay.blit(wood,(x_cor-50,y_cor+15))
+    
     gameDisplay.blit(character,(x_cor-100,y_cor))
     draw_text(gameDisplay, str(displayword), 40, x_cor, y_cor)
     draw_text(gameDisplay, 'Score:'+str(score), 40, WIDTH/2 , 5)
