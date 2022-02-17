@@ -23,7 +23,7 @@ def new_word():
     y_cor = 200  
     word_speed += 0.10
     yourword = ''
-    words = open("words.txt").read().split(', ')
+    words = open("word.txt").read().split(', ')
     displayword = random.choice(words)
 new_word()
 
